@@ -1,4 +1,5 @@
 {
+   "homepage": "http://stumbra.github.io/menu-code-test-react",
    "name": "ot-menu-test",
    "version": "1.0.0",
    "description": "A small scaffold application for building ot-menu",
@@ -37,6 +38,7 @@
       "eslint-plugin-prettier": "^3.1.4",
       "eslint-plugin-react": "^7.21.3",
       "eslint-plugin-react-hooks": "^4.1.2",
+      "gh-pages": "^3.1.0",
       "html-webpack-plugin": "^3.2.0",
       "prettier": "^2.1.2",
       "webpack": "^4.19.1",
