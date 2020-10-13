@@ -1,14 +1,9 @@
 import styled from "styled-components";
 
-const Container = styled.footer`
-   padding: 1rem;
-   position: absolute;
-   margin: 16px;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   width: auto;
+const Wrapper = styled.footer`
+   padding: 8px;
    background-color: ${({ theme }) => theme.colors.secondary};
+   margin-top: 16px;
 `;
 
 const Copyright = styled.small`
@@ -18,4 +13,4 @@ const Copyright = styled.small`
    color: ${({ theme }) => theme.colors.light};
 `;
 
-export { Container, Copyright };
+export { Wrapper, Copyright };

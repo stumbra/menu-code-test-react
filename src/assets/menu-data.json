@@ -1,94 +1,103 @@
-{
-   "restaurants": [
-      {
-         "title": "Carmine's - 91st Street - NYC",
-         "backdropUrl": "https://bit.ly/3jCzMkD",
-         "location": "Upper West Side",
-         "rating": 4.5,
-         "reviewCount": 6103,
-         "type": "Italian",
-         "priceyness": 4,
-         "menu": {
-            "starters": [
-               {
-                  "id": 1,
-                  "name": "Soup",
-                  "price": 3,
-                  "backdropUrl": "https://bit.ly/3d0ZIUP"
-               },
-               {
-                  "id": 2,
-                  "name": "Pâté",
-                  "price": 5,
-                  "backdropUrl": "https://bit.ly/34wd3jR"
-               },
-               {
-                  "id": 3,
-                  "name": "Bruschetta",
-                  "price": 4.5,
-                  "backdropUrl": "https://bit.ly/2SxYmat"
-               },
-               {
-                  "id": 4,
-                  "name": "Prawn cocktail",
-                  "price": 6,
-                  "backdropUrl": "https://bit.ly/30D72RE"
-               }
-            ],
-            "mains": [
-               {
-                  "id": 5,
-                  "name": "Steak",
-                  "price": 18,
-                  "backdropUrl": "https://bit.ly/36DNW1w"
-               },
-               {
-                  "id": 6,
-                  "name": "Meatballs",
-                  "price": 11.5,
-                  "backdropUrl": "https://bit.ly/33zBfD1"
-               },
-               {
-                  "id": 7,
-                  "name": "Salmon fillet",
-                  "price": 14,
-                  "backdropUrl": "https://bit.ly/3jvJaql"
-               },
-               {
-                  "id": 8,
-                  "name": "Vegetarian lasagna",
-                  "price": 12,
-                  "backdropUrl": "https://bit.ly/33zjKTa"
-               }
-            ],
-            "desserts": [
-               {
-                  "id": 9,
-                  "name": "Sticky toffee",
-                  "price": 18,
-                  "backdropUrl": "https://bit.ly/3iwVQMt"
-               },
-               {
-                  "id": 10,
-                  "name": "Tiramisu",
-                  "price": 4.5,
-                  "backdropUrl": "https://bit.ly/36BHesL"
-               },
-               {
-                  "id": 11,
-                  "name": "Cheesecake",
-                  "price": 4,
-                  "backdropUrl": "https://bit.ly/3nl3MnB",
-                  "amount": 1
-               },
-               {
-                  "id": 12,
-                  "name": "Ice cream",
-                  "price": 3.5,
-                  "backdropUrl": "https://bit.ly/2Gtp3e8"
-               }
-            ]
-         }
+[
+   {
+      "id": 0,
+      "title": "Carmine's - 91st Street - NYC",
+      "backdropUrl": "https://bit.ly/3jCzMkD",
+      "location": "Upper West Side",
+      "rating": 3,
+      "reviewCount": 6103,
+      "type": "Italian",
+      "menu": {
+         "starters": [
+            {
+               "id": 1,
+               "name": "Soup",
+               "price": 3,
+               "backdropUrl": "https://bit.ly/3d0ZIUP",
+               "amount": 99
+            },
+            {
+               "id": 2,
+               "name": "Pâté",
+               "price": 5,
+               "backdropUrl": "https://bit.ly/34wd3jR",
+               "amount": 99
+            },
+            {
+               "id": 3,
+               "name": "Bruschetta",
+               "price": 4.5,
+               "backdropUrl": "https://bit.ly/2SxYmat",
+               "amount": 99
+            },
+            {
+               "id": 4,
+               "name": "Prawn cocktail",
+               "price": 6,
+               "backdropUrl": "https://bit.ly/30D72RE",
+               "amount": 99
+            }
+         ],
+         "mains": [
+            {
+               "id": 5,
+               "name": "Steak",
+               "price": 18,
+               "backdropUrl": "https://bit.ly/36DNW1w",
+               "amount": 99
+            },
+            {
+               "id": 6,
+               "name": "Meatballs",
+               "price": 11.5,
+               "backdropUrl": "https://bit.ly/33zBfD1",
+               "amount": 99
+            },
+            {
+               "id": 7,
+               "name": "Salmon fillet",
+               "price": 14,
+               "backdropUrl": "https://bit.ly/3jvJaql",
+               "amount": 99
+            },
+            {
+               "id": 8,
+               "name": "Vegetarian lasagna",
+               "price": 12,
+               "backdropUrl": "https://bit.ly/33zjKTa",
+               "amount": 99
+            }
+         ],
+         "desserts": [
+            {
+               "id": 9,
+               "name": "Sticky toffee",
+               "price": 18,
+               "backdropUrl": "https://bit.ly/3iwVQMt",
+               "amount": 99
+            },
+            {
+               "id": 10,
+               "name": "Tiramisu",
+               "price": 4.5,
+               "backdropUrl": "https://bit.ly/36BHesL",
+               "amount": 99
+            },
+            {
+               "id": 11,
+               "name": "Cheesecake",
+               "price": 4,
+               "backdropUrl": "https://bit.ly/3nl3MnB",
+               "amount": 1
+            },
+            {
+               "id": 12,
+               "name": "Ice cream",
+               "price": 3.5,
+               "backdropUrl": "https://bit.ly/2Gtp3e8",
+               "amount": 99
+            }
+         ]
       }
-   ]
-}
+   }
+]

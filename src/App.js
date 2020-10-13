@@ -1,10 +1,23 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from "react";
+import { render } from "react-dom";
+import { ThemeProvider } from "styled-components";
 
-class App extends React.Component {
-    render() {
-        return <h1>Menu Test</h1>;
-    }
-}
+import Places from "./pages/Places";
 
-render(<App />, document.getElementById('root'));
+import { Header, Footer } from "./components";
+
+import GlobalStyles from "./theme/globalStyles";
+
+import Theme from "./theme/theme";
+
+import "react-toastify/dist/ReactToastify.css";
+
+render(
+   <ThemeProvider theme={Theme}>
+      <GlobalStyles />
+      <Header />
+      <Places />
+      <Footer />
+   </ThemeProvider>,
+   document.getElementById("root")
+);

@@ -4,30 +4,39 @@ import Modal from "react-modal";
 
 const StyledModal = styled(Modal)`
    position: absolute;
-   top: 40px;
-   left: 40px;
-   right: 40px;
-   bottom: 40px;
+   top: 5%;
    border: 1px solid rgb(204, 204, 204);
    background: rgb(255, 255, 255);
    overflow: auto;
    border-radius: 4px;
    outline: none;
    padding: 20px;
-   width: 50vw;
-   min-width: 70vw;
-   height: 50%;
-   margin: 0px auto;
+   width: 40%;
+   margin-left: 30%;
+   max-height: 90%;
+   @media (max-width: 1000px) {
+      margin-left: 20%;
+      width: 60%;
+   }
+   @media (max-width: 524px) {
+      margin-left: 10%;
+      width: 80%;
+   }
+   @media (max-width: 296px) {
+      margin-left: 8%;
+      width: 85%;
+   }
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
    display: flex;
    justify-content: center;
 `;
 
-const InnerContainer = styled.div`
+const InnerWrapper = styled.div`
    text-align: center;
    width: 50%;
+
    @media (max-width: 480px) {
       width: 70%;
    }
@@ -39,22 +48,7 @@ const Header = styled.h2`
 `;
 
 const Subtitle = styled.p`
-   margin-top: 25px;
-   margin-bottom: 25px;
-`;
-
-const ActionButton = styled.button`
-   padding: 5px 20px;
-   border-radius: 10%;
-   background-color: #fff;
-   transition: 0.6s;
-   outline: none;
-   margin-top: 10px;
-   font-size: 14px;
-   &:hover:enabled {
-      color: white;
-      background-color: ${({ theme }) => theme.colors.primary};
-   }
+   margin: 25px 0;
 `;
 
 const SubactionButton = styled.button`
@@ -69,4 +63,4 @@ const SubactionButton = styled.button`
    }
 `;
 
-export { StyledModal, Container, InnerContainer, Header, Subtitle, ActionButton, SubactionButton };
+export { StyledModal, Wrapper, InnerWrapper, Header, Subtitle, SubactionButton };
