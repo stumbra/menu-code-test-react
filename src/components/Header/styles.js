@@ -1,22 +1,24 @@
 import styled from "styled-components";
 
-const Container = styled.header`
+const breakpoint = "683px";
+
+const Wrapper = styled.header`
    background-color: ${({ theme }) => theme.colors.light};
-   padding 0.75rem;
+   padding 12px;
    border-bottom: ${({ theme }) => theme.colors.primary} 3px solid;
 `;
 
-const InnerContainer = styled.div`
+const InnerWrapper = styled.div`
    display: flex;
    justify-content: space-between;
-   @media (max-width: 670px) {
+   @media (max-width: ${breakpoint}) {
       flex-direction: column;
    }
 `;
 
-const LogoContainer = styled.div`
-   height: 3.5rem;
-   @media (max-width: 670px) {
+const LogoWrapper = styled.div`
+   height: 56px;
+   @media (max-width: ${breakpoint}) {
       align-self: center;
       margin-bottom: 5px;
    }
@@ -26,16 +28,16 @@ const Logo = styled.img`
    height: 100%;
 `;
 
-const ActionContainer = styled.div`
+const ActionWrapper = styled.div`
    display: flex;
    align-self: center;
 `;
 
-const ActionText = styled.h2`
+const Text = styled.h2`
    color: ${({ theme }) => theme.colors.dark};
-   @media (max-width: 670px) {
+   @media (max-width: ${breakpoint}) {
       text-align: center;
    }
 `;
 
-export { Container, InnerContainer, LogoContainer, Logo, ActionContainer, ActionText };
+export { Wrapper, InnerWrapper, LogoWrapper, Logo, ActionWrapper, Text };

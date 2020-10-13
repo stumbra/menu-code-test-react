@@ -1,30 +1,23 @@
 import React from "react";
 
-import {
-   Container,
-   InnerContainer,
-   LogoContainer,
-   Logo,
-   ActionContainer,
-   ActionText,
-} from "./styles";
+import * as S from "./styles";
 
 const Header = () => (
-   <Container>
-      <InnerContainer>
-         <LogoContainer>
-            <Logo src="src\assets\opentable-logo.svg" alt="OpenTable Logo" />
-         </LogoContainer>
-         <ActionContainer>
-            <ActionText>
-               Please select a restaurant to dine in{" "}
+   <S.Wrapper>
+      <S.InnerWrapper>
+         <S.LogoWrapper>
+            <S.Logo src="src\assets\opentable-logo.svg" alt="OpenTable Logo" />
+         </S.LogoWrapper>
+         <S.ActionWrapper>
+            <S.Text>
+               {`Please select a restaurant to dine in `}
                <span role="img" aria-label="utensils">
                   🍽️
                </span>
-            </ActionText>
-         </ActionContainer>
-      </InnerContainer>
-   </Container>
+            </S.Text>
+         </S.ActionWrapper>
+      </S.InnerWrapper>
+   </S.Wrapper>
 );
 
 export default Header;
