@@ -1,20 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-   StyledModal,
-   Container,
-   InnerContainer,
-   Header,
-   Subtitle,
-   ActionButton,
-   SubactionButton,
-} from "./styles";
 
-StyledModal.setAppElement("#root");
+import Button from "../Button";
+
+import * as S from "./styles";
+
+S.StyledModal.setAppElement("#root");
 
 const defaultStyles = {
    overlay: { backgroundColor: "rgba(0, 0, 0, 0.7)" },
-   content: { minWidth: "71vw", minHeight: "50vh", margin: "0 auto" },
 };
 
 const Modal = ({
@@ -22,34 +16,32 @@ const Modal = ({
    modalSubtitle,
    isVisible,
    children,
+   onActionPress,
    actionButtonText,
    subactionButtonText,
-   onActionPress,
    onSubactionPress,
    actionButtonDisabled,
 }) => {
    return (
-      <StyledModal isOpen={isVisible} style={defaultStyles}>
-         <Container>
-            <InnerContainer>
-               <Header>{modalTitle}</Header>
-               <Subtitle>{modalSubtitle}</Subtitle>
+      <S.StyledModal isOpen={isVisible} style={defaultStyles}>
+         <S.Wrapper>
+            <S.InnerWrapper>
+               <S.Header>{modalTitle}</S.Header>
+               <S.Subtitle>{modalSubtitle}</S.Subtitle>
                {children}
-               <div>
-                  <ActionButton
-                     type="submit"
-                     onClick={onActionPress}
-                     disabled={actionButtonDisabled}
-                  >
-                     {actionButtonText}
-                  </ActionButton>
-               </div>
-               <SubactionButton type="button" onClick={onSubactionPress}>
+
+               <Button
+                  type="submit"
+                  onClick={(e) => onActionPress(e)}
+                  disabled={actionButtonDisabled}
+                  title={actionButtonText}
+               />
+               <S.SubactionButton type="button" onClick={onSubactionPress}>
                   {subactionButtonText}
-               </SubactionButton>
-            </InnerContainer>
-         </Container>
-      </StyledModal>
+               </S.SubactionButton>
+            </S.InnerWrapper>
+         </S.Wrapper>
+      </S.StyledModal>
    );
 };
 
@@ -69,7 +61,7 @@ Modal.defaultProps = {
    modalTitle: "Default Modal Title",
    modalSubtitle: "Default Modal Subtitle",
    isVisible: false,
-   children: null,
+   children: undefined,
    actionButtonText: "Default Action Button Text",
    subactionButtonText: "Default Subaction Button Text",
    onActionPress: () => {},
