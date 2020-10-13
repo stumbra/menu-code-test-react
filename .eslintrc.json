@@ -26,6 +26,9 @@
       ],
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "react/state-in-constructor": "off",
-      "jsx-a11y/label-has-associated-control": "off"
+      "jsx-a11y/label-has-associated-control": "off",
+      "react/no-children-prop": "off",
+      "react/no-array-index-key": "off",
+      "react/import/prefer-default-export"
    }
 }
