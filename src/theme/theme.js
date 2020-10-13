@@ -6,4 +6,5 @@ export default {
       light: "#FFFFFF",
       background: "#E3E3E3",
    },
+   transitionTime: "0.5s",
 };
