@@ -2,11 +2,13 @@ import React from "react";
 
 import * as S from "./styles";
 
+const OpenTableLogo = "https://bit.ly/3k2rwuM";
+
 const Header = () => (
    <S.Wrapper>
       <S.InnerWrapper>
          <S.LogoWrapper>
-            <S.Logo src="src\assets\opentable-logo.svg" alt="OpenTable Logo" />
+            <S.Logo src={OpenTableLogo} alt="OpenTable Logo" />
          </S.LogoWrapper>
          <S.ActionWrapper>
             <S.Text>
