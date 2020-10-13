@@ -4,7 +4,10 @@
    "description": "A small scaffold application for building ot-menu",
    "main": "./src/App.js",
    "scripts": {
-      "start": "webpack-dev-server --mode development --open"
+      "start": "webpack-dev-server --mode development --open",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
+      "build": "webpack"
    },
    "author": "",
    "license": "ISC",

@@ -29,7 +29,7 @@ module.exports = {
       ],
    },
    output: {
-      path: path.join(__dirname, "/public/webpack/"),
+      path: path.join(__dirname, "/build"),
       filename: "bundle.js",
    },
    plugins: [htmlPlugin],
