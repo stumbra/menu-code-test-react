@@ -40,4 +40,8 @@ const Underline = styled.p`
    }
 `;
 
-export { StandartButton, RoundedButton, Underline };
+const ButtonWrapper = styled.div`
+   align-self: center;
+`;
+
+export { StandartButton, RoundedButton, Underline, ButtonWrapper };

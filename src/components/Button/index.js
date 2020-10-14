@@ -7,12 +7,12 @@ const Button = ({ onClick, type, title, disabled, shape, underline }) => {
    const CustomButton = shape === "rounded" ? S.RoundedButton : S.StandartButton;
 
    return (
-      <div style={{ alignSelf: "center" }}>
+      <S.ButtonWrapper>
          <CustomButton type={type} disabled={disabled} onClick={onClick}>
             {title}
          </CustomButton>
          {shape === "rounded" && <S.Underline>{underline}</S.Underline>}
-      </div>
+      </S.ButtonWrapper>
    );
 };
 
